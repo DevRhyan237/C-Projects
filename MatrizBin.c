@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 printf("=-=-=-=-=");
 printf("CONTADOR DE BINARIOS");
