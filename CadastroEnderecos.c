@@ -41,7 +41,8 @@ int main() {
     }
 
     for(int i = 0; i < qtde; i++) {
-        printf("PESSOA %d",i+1);
+        printf("\n=-=-=-=");
+        printf("\nPESSOA %d:",i+1);
         printf("\nInforme o numero da residencia: ");
         scanf("%d", &num);
         getchar();
@@ -61,13 +62,14 @@ int main() {
         printf("Informe o nome: ");
         fgets(nome, 50, stdin);
         nome[strcspn(nome, "\n")] = '\0';
+        printf("=-=-=-=\n");
 
         setup(&vet[i], num, cidade, bairro, rua, nome);
     }
 
     printf("\n--- ENDERECOS CADASTRADOS ---\n");
     for(int i = 0; i < qtde; i++) {
-        printf("\nENDERECO PESSOA %d",i+1);
+        printf("\nENDERECO PESSOA %d:",i+1);
         imprimir(vet[i]);
     }
     free(vet);
